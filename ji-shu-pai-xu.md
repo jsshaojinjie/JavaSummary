@@ -2,25 +2,32 @@
 
 空间复杂度：O\(1\)
 
-稳定性：不稳定
+稳定性：稳定
 
 基本思想：
 
 ```
     public static void sort(int[] array) {
-        if (array.length == 0) return;
-        int section = array.length / 2;
-        while (section >= 1) {
-            for (int i = section; i < array.length; i++) {
-                int temp = array[i];
-                int j = i - section;
-                while (j > 0 && array[j] > temp) {
-                    array[j + section] = array[j];
-                    j = j - section;
-                }
-                array[j + section] = temp;
+        int maxLenght = 0;
+        for (int i : array) {
+            if (String.valueOf(i).length() > maxLenght) {
+                maxLenght = String.valueOf(i).length();
             }
-            section = section / 2;
+        }
+        for (int i = 0; i < maxLenght; i++) {
+            int[][] temp = new int[10][array.length];
+            int[] secondIndexArray = new int[10];
+            for (int j = 0; j < array.length; j++) {
+                int index = (int) ((array[j] % (Math.pow(10, i + 1))) / Math.pow(10, i));
+                temp[index][secondIndexArray[index]] = array[j];
+                secondIndexArray[index] = secondIndexArray[index] + 1;
+            }
+            int index = 0;
+            for (int m = 0; m < 10; m++) {
+                for (int n = 0; n < secondIndexArray[m]; n++) {
+                    array[index++] = temp[m][n];
+                }
+            }
         }
     }
 ```
