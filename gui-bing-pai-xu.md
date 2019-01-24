@@ -4,7 +4,7 @@
 
 稳定性：稳定
 
-基本思想：
+基本思想：将数组分为两块，分别对两块进行排序，然后合并这两个有序数组。
 
 ```
     public static void sort(int[] array) {
@@ -43,7 +43,6 @@
             array[m + left] = temp[m];
         }
     }
-
 ```
 
 
