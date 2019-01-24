@@ -4,7 +4,7 @@
 
 稳定性：不稳定
 
-基本思想：
+基本思想：将数组头部数据作为基数，将数组改为小于等于基数与大于基数的两部分，放在基数左右两边，然后递归操作左右两边数组
 
 ```
     public static void sort(int[] array) {
@@ -41,7 +41,6 @@
         sort(array, leftIndex, left - 1);
         sort(array, left + 1, rightIndex);
     }
-
 ```
 
 
