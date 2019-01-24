@@ -1,4 +1,4 @@
-* [排序]
+* 排序
   * [冒泡排序](mao-pao-pai-xu.md)
   * [堆排序](dui-pai-xu.md)
   * [希尔排序](xi-er-pai-xu.md)
