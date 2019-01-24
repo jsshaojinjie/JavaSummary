@@ -13,6 +13,7 @@
   * [集合类](ji-he-lei/ji-he-lei.md)
     * [HashMap](ji-he-lei/hashmap.md)
     * [HashTable](ji-he-lei/hashtable.md)
+    * [ConcurrentHashMap](ji-he-lei/concurrenthashmap.md)
     * [综合问题](ji-he-lei/zong-he-wen-ti.md)
   * [多线程](ji-he-lei/duo-xian-cheng.md)
     * [综合问题](ji-he-lei/duo-xian-cheng/zong-he-wen-ti.md)
