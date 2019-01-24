@@ -10,5 +10,13 @@
 
 
 
+# 2.key与value是否可以为null
+
+都可以为null。
+
+HashMap的key都是存储为key 的hash值，假如为null时，则存储为0，所以可以为null。
+
+![](/assets/import.png)
+
 
 

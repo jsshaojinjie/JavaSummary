@@ -11,4 +11,6 @@
   * [基数排序](ji-shu-pai-xu.md)
 * [集合类](ji-he-lei.md)
   * [HashMap](ji-he-lei/hashmap.md)
+  * [HashTable](ji-he-lei/hashtable.md)
+  * [综合问题](ji-he-lei/zong-he-wen-ti.md)
 
